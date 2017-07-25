@@ -8,7 +8,10 @@ Simple.setData(obj), которые принимают в качестве па�
 ```
 data = { name: "Ilya", surname: "Gubanov" };
 func = { 
-	getName: function() { console.log(this); return data.name; }, 
+	getName: function() { 
+		console.log(this); 
+		return data.name; 
+	}, 
 	getSurName: function() { return data.surname; } 
 }
  
