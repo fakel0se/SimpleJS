@@ -5,8 +5,13 @@ Simple.setData(obj), которые принимают в качестве па�
 ##Пример кода: 
 ```
 data = { name: "Ilya", surname: "Gubanov" };
-func = { getName: function() { console.log(this); return data.name; }, getSurName: function() { return data.surname; } } 
+func = { 
+	getName: function() { console.log(this); return data.name; }, 
+	getSurName: function() { return data.surname; } 
+}
+ 
 Simple.setData(data); 
 Simple.setFunc(func); 
+
 document.body.innerHTML = "<h1>" + Simple.getFunc().getName() + " " + Simple.getFunc().getSurName() + "</h1>"; js
 ```
